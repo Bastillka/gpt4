@@ -8,6 +8,8 @@ This was made using Chansung's GPT4-Alpaca Lora: https://huggingface.co/chansung
 
 <p><strong><font size="5">Benchmarks</font></strong></p>
 
+<p><strong><font size="4">--true-sequential --act-order</font></strong></p>
+
 <strong>Wikitext2</strong>: 4.481280326843262
 
 <strong>Ptb-New</strong>: 8.539161682128906
@@ -15,3 +17,13 @@ This was made using Chansung's GPT4-Alpaca Lora: https://huggingface.co/chansung
 <strong>C4-New</strong>: 6.451964855194092
 
 <strong>Note</strong>: This version does not use <i>--groupsize 128</i>, therefore evaluations are minimally higher. However, this version allows fitting the whole model at full context using only 24GB VRAM.
+
+<p><strong><font size="4">--true-sequential --groupsize 128</font></strong></p>
+
+<strong>Wikitext2</strong>: 4.285132884979248
+
+<strong>Ptb-New</strong>: 8.34856128692627
+
+<strong>C4-New</strong>: 6.292652130126953
+
+<strong>Note</strong>: This version uses <i>--groupsize 128</i>, resulting in better evaluations. However, it consumes more VRAM.
