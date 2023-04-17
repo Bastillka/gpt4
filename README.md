@@ -1,6 +1,6 @@
 <p><strong><font size="5">Information</font></strong></p>
 GPT4-X-Alpaca 30B 4-bit working with GPTQ versions used in Oobabooga's Text Generation Webui and KoboldAI.
-<p>There are 2 quantized versions, one is using <i>--true-sequential</i> and <i>--act-order</i> optimizations, and the other is using <i>--true-sequential</i> and <i>--groupsize 128</i> optimizations.</p>
+<p>There are 3 quantized versions, one is quantized using GPTQ's <i>--true-sequential</i> and <i>--act-order</i> optimizations, the second is quantized using GPTQ's <i>--true-sequential</i> and <i>--groupsize 128</i> optimization, and the third one is quantized for GGML using q4_1</p>
 This was made using Chansung's GPT4-Alpaca Lora: https://huggingface.co/chansung/gpt4-alpaca-lora-30b
 
 <p><strong>Training Parameters</strong></p>
