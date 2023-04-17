@@ -3,6 +3,8 @@ GPT4-X-Alpaca 30B 4-bit working with GPTQ versions used in Oobabooga's Text Gene
 <p>There are 3 quantized versions, one is quantized using GPTQ's <i>--true-sequential</i> and <i>--act-order</i> optimizations, the second is quantized using GPTQ's <i>--true-sequential</i> and <i>--groupsize 128</i> optimization, and the third one is quantized for GGML using q4_1</p>
 This was made using Chansung's GPT4-Alpaca Lora: https://huggingface.co/chansung/gpt4-alpaca-lora-30b
 
+<p><strong>Note</strong>: To use with your GPU using GPTQ pick one of the .safetensors along with all of the .jsons and .model files. To use your CPU using GGML(Llamacpp) you only need the single .bin ggml file. </p>
+
 <p><strong>Training Parameters</strong></p>
 <ul><li>num_epochs=10</li><li>cutoff_len=512</li><li>group_by_length</li><li>lora_target_modules='[q_proj,k_proj,v_proj,o_proj]'</li><li>lora_r=16</li><li>micro_batch_size=8</li></ul>
 
