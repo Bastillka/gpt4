@@ -1,17 +1,17 @@
 <p><strong><font size="5">Information</font></strong></p>
 GPT4-X-Alpaca 30B 4-bit working with GPTQ versions used in Oobabooga's Text Generation Webui and KoboldAI.
 <p>There are 3 quantized versions, one is quantized using GPTQ's <i>--true-sequential</i> and <i>--act-order</i> optimizations, the second is quantized using GPTQ's <i>--true-sequential</i> and <i>--groupsize 128</i> optimization, and the third one is quantized for GGML using q4_1</p>
-This was made using Chansung's GPT4-Alpaca Lora: https://huggingface.co/chansung/gpt4-alpaca-lora-30b
+This was made using <a href="https://huggingface.co/chansung/gpt4-alpaca-lora-30b">Chansung's GPT4-Alpaca Lora</a>
 
 <p><strong>GPU/GPTQ Usage</strong></p>
 <p>To use with your GPU using GPTQ pick one of the .safetensors along with all of the .jsons and .model files.</p>
-<p>Oobabooga: If you require further instruction, see https://github.com/oobabooga/text-generation-webui/blob/main/docs/GPTQ-models-(4-bit-mode).md and https://github.com/oobabooga/text-generation-webui/blob/main/docs/LLaMA-model.md</p>
-<p>KoboldAI: If you require further instruction, see https://github.com/0cc4m/KoboldAI</p>
+<p>Oobabooga: If you require further instruction, see <a href="https://github.com/oobabooga/text-generation-webui/blob/main/docs/GPTQ-models-(4-bit-mode).md">here</a> and <a href="https://github.com/oobabooga/text-generation-webui/blob/main/docs/LLaMA-model.md">here</a></p>
+<p>KoboldAI: If you require further instruction, see <a href="https://github.com/0cc4m/KoboldAI">here</a></p>
 
 <p><strong>CPU/GGML Usage</strong></p> 
 <p>To use your CPU using GGML(Llamacpp) you only need the single .bin ggml file.</p>
-<p>Oobabooga: If you require further instruction, see https://github.com/oobabooga/text-generation-webui/blob/main/docs/llama.cpp-models.md</p>
-<p>KoboldAI: If you require further instruction, see https://github.com/LostRuins/koboldcpp </p>
+<p>Oobabooga: If you require further instruction, see <a href="https://github.com/oobabooga/text-generation-webui/blob/main/docs/llama.cpp-models.md">here</a></p>
+<p>KoboldAI: If you require further instruction, see <a href="https://github.com/LostRuins/koboldcpp">here</a></p>
 
 <p><strong>Training Parameters</strong></p>
 <ul><li>num_epochs=10</li><li>cutoff_len=512</li><li>group_by_length</li><li>lora_target_modules='[q_proj,k_proj,v_proj,o_proj]'</li><li>lora_r=16</li><li>micro_batch_size=8</li></ul>
